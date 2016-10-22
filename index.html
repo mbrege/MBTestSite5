@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mick</title>
+    <style>
+      body { margin: 0; }
+      canvas { width: 50px; height: 50px }
+    </style>
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="socIconstyle.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!-- WHEN DOC LOADS, ANIMATION -->
+<!--script>
+  $(document).ready(function(){
+    $(".main-accordion").accordion();
+  });
+</script -->
+
+  </head>
+
+  <body>
+
+    <body class="demo-1">
+  <div id="ip-container" class="ip-container">
+    <!-- initial header -->
+    <header class="ip-header">
+      <h1 class="ip-logo">
+          <img id="logo_hide" src="mblogo.gif" alt="mbloader" style="display: block; margin-left: auto; margin-right: auto; width:225;height:225px;">
+            <script type="text/javascript">
+              var gifSource = $('#logo_hide').attr('src'); //get the source in the var
+              $('#logo_hide').attr('src', ""); //erase the source
+              $('#logo_hide').attr('src', gifSource+"?"+new Date().getTime()); //add the date to the source of the image... :-)
+            </script>
+          <title id="logo_title">Image</title>
+        </image>
+      </h1>
+      <div class="ip-loader">
+        <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+          <path class="ip-loader-circlebg"/>
+          <path id="ip-loader-circle" class="ip-loader-circle" />
+        </svg>
+      </div>
+    </header>
+  </div><!-- /container -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section">
+              <!-- <div id="leftbordColor" class ="top-border left"></div>
+              <!- <div id="midbordColor" class ="top-border middle"></div> -->
+              <div id="container1">
+                </div>
+              <div id="bleftbordColor" class="bottom-border bleft"></div>
+              <div class="bottom-border bright"></div>
+              <p id="mletter"> M</p>
+              <p id="subtext">
+                y name is <b style="font-size: 16px;">MICK BREGE</b>, and I’m a third-year Interaction Design major from Michigan. </p>
+              <p></p>
+              <div id="container2">
+                </div>
+              <a href="mailto:mbrege@ltu.edu?Subject=Hi%20Mick,%20lets%20build%20something!" class="button" target="_top">LET'S BUILD SOMETHING</a>
+              <div class="socIcons">
+                <a href="https://www.linkedin.com/in/mick-brege-4a69b6b1">
+                  <div class="socIcon">
+                    <button class="socIcon-layer" data-img="socIcon/linkedin3.png"></button>
+                    <button class="socIcon-layer" data-img="socIcon/linkedin3.png"></button>
+                    <button class="socIcon-layer" data-img="socIcon/linkedin3.png"></button>
+                    <button class="socIcon-layer" data-img="socIcon/linkedin.png"></button>
+                  </div>
+                </a>
+                <a href="https://twitter.com/mi_hb">
+                  <div class="socIcon">
+                    <button class="socIcon-layer" data-img="socIcon/twitter3.png"></button>
+                    <button class="socIcon-layer" data-img="socIcon/twitter3.png"></button>
+                    <button class="socIcon-layer" data-img="socIcon/twitter3.png"></button>
+                    <button class="socIcon-layer" data-img="socIcon/twitter.png"></button>
+                  </div>
+                </a>
+                <a href="https://dribbble.com/MickBrege">
+                  <div class="socIcon">
+                    <button class="socIcon-layer" data-img="socIcon/dribbble3.png"></button>
+                    <button class="socIcon-layer" data-img="socIcon/dribbble3.png"></button>
+                    <button class="socIcon-layer" data-img="socIcon/dribbble3.png"></button>
+                    <button class="socIcon-layer" data-img="socIcon/dribbble.png"></button>
+                  </div>
+                </a>
+            </div>
+
+              <!-- <l id="detailtext"> Or view it here. </l> -->
+              <div class="footer-border fright"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/three.min.js"></script>   <!-- Cant compress -->
+    <script src="js/OBJLoader.js"></script> <!-- Cant compress -->
+    <script src="js/MTLLoader.js"></script> <!-- Cant compress -->
+    <script src="js/mick.js"></script>  <!-- Cant compress -->
+    <!-- <script src="js/pin.js"></script>  <!-- Cant compress --> 
+    <script src="js/button.js"></script>
+    <script src="js/socIcon.js"></script>
+    <script src="js/icons.js"></script>
+		<script src="js/modernizr.custom.js"></script>   <!-- Cant compress -->
+    <script src="js/classie.js"></script>   <!-- Cant compress -->
+    <script src="js/pathLoader.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
